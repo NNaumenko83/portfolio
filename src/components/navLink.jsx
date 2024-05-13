@@ -17,4 +17,3 @@ const NavLink = ({ link }) => {
 };
 
 export default NavLink;
-scrollTo;
