@@ -90,7 +90,7 @@ const PortfolioPage = () => {
                             repeat: Infinity,
                         }}
                         viewBox="0 0 300 300"
-                        className="w-64 h-64 md:h-[500px]  md:w-[500px] "
+                        className="w-64 h-64 md:h-[400px]  md:w-[400px] "
                     >
                         <defs>
                             <path
@@ -101,10 +101,10 @@ const PortfolioPage = () => {
                         <text fill="#000">
                             <textPath
                                 xlinkHref="#circlePath"
-                                className="text-xl"
-                                startOffset="50%"
+                                className="text-3xl"
+                                startOffset="0%"
                             >
-                                Full-Stack Developer Full-Stack Developer
+                                Full-Stack Developer
                             </textPath>
                         </text>
                     </motion.svg>
