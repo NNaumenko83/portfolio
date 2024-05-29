@@ -1,13 +1,42 @@
 'use client';
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
 
     const text = 'Say Hello';
+
+    const form = useRef();
+
+    const sendEmail = e => {
+        e.preventDefault();
+        setError(false);
+        setSuccess(false);
+
+        emailjs
+            .sendForm(
+                process.env.NEXT_PUBLIC_SERVICE_ID,
+                process.env.NEXT_PUBLIC_TEMPLATE_ID,
+                form.current,
+                {
+                    publicKey: process.env.NEXT_PUBLIC_KEY,
+                }
+            )
+            .then(
+                () => {
+                    setSuccess(true);
+                    form.current.reset();
+                },
+                error => {
+                    setError(true);
+                }
+            );
+    };
+
     return (
         <motion.div
             className="h-full"
@@ -15,9 +44,9 @@ const ContactPage = () => {
             animate={{ y: '0%' }}
             transition={{ duration: 1 }}
         >
-            <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+            <div className="flex flex-col h-full px-4 lg:flex-row sm:px-8 md:px-12 lg:px-20 xl:px-48">
                 {/* TEXT CONTAINER */}
-                <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
+                <div className="flex items-center justify-center text-6xl h-1/2 lg:h-full lg:w-1/2">
                     <motion.div className="">
                         {text.split('').map((letter, index) => (
                             <motion.span
@@ -39,28 +68,34 @@ const ContactPage = () => {
                 </div>
 
                 {/* FORM CONTAINER */}
-                <form className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl  text-xl flex flex-col gap-8 justify-center p-24">
+                <form
+                    onSubmit={sendEmail}
+                    ref={form}
+                    className="flex flex-col justify-center gap-8 p-24 text-xl h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl"
+                >
                     <span className="">Dear Mykola,</span>
                     <textarea
                         rows={6}
-                        className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+                        className="bg-transparent border-b-2 outline-none resize-none border-b-black"
+                        name="user_message"
                     />
                     <span className="">My email address is:</span>
                     <input
+                        name="user_email"
                         type="text"
-                        className="bg-transparent border-b-2 border-b-black outline-none"
+                        className="bg-transparent border-b-2 outline-none border-b-black"
                     />
                     <span>Regards</span>
-                    <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+                    <button className="p-4 font-semibold text-gray-600 bg-purple-200 rounded">
                         Send
                     </button>
                     {success && (
-                        <span className="text-green-700 font-semibold">
+                        <span className="font-semibold text-green-700">
                             Your message has been sent successfully!
                         </span>
                     )}
                     {error && (
-                        <span className="text-red-700 font-semibold">
+                        <span className="font-semibold text-red-700">
                             Something went wrong
                         </span>
                     )}
