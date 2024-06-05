@@ -9,34 +9,34 @@ const items = [
     {
         id: 1,
         color: 'from-red-300 to-blue-300',
-        title: 'React Commerce',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-        img: 'https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-        link: 'https://lama.dev',
+        title: 'StarRunner',
+        desc: 'StarRunner Token Staking is a web3 application that allows you to stake tokens, claim rewards, and withdraw tokens from the staking pool at any time.',
+        img: '/projects_img/StarRunner.jpg',
+        link: 'https://dexola-web3.vercel.app/',
     },
     {
         id: 2,
         color: 'from-blue-300 to-violet-300',
-        title: 'Next.js Medium Blog',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-        img: 'https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-        link: 'https://lama.dev',
+        title: 'GooseTrack',
+        desc: 'Application for task planning. Role: Developer (The calendar table that accurately displayed tasks and events. Feedback feature, allowing users to provide valuable feedback and ratings).',
+        img: '/projects_img/Goose.jpg',
+        link: 'https://a-pinchuk.github.io/githack-GooseTrack-app',
     },
     {
         id: 3,
         color: 'from-violet-300 to-purple-300',
-        title: 'Vanilla Book App',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-        img: 'https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load',
-        link: 'https://lama.dev',
+        title: 'DexolaCamp',
+        desc: 'Landing page.',
+        img: '/projects_img/DexolaCamp.jpg',
+        link: 'https://dexola-camp.vercel.app/',
     },
     {
         id: 4,
         color: 'from-purple-300 to-red-300',
-        title: 'Spotify Music App',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-        img: 'https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        link: 'https://lama.dev',
+        title: 'NovaPoshta',
+        desc: 'Test task. Web application that allows users to track their shipments and find Nova Poshta branches based on various criteria.',
+        img: '/projects_img/NovaPoshta.jpg',
+        link: 'https://nova-poshta-test-task-sooty.vercel.app/',
     },
 ];
 
@@ -57,9 +57,9 @@ const PortfolioPage = () => {
                 <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
                     My works
                 </div>
-                <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
+                <div className="sticky top-0 flex items-center h-screen gap-4 overflow-hidden">
                     <motion.div style={{ x }} className="flex">
-                        <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
+                        <div className="flex items-center justify-center w-screen h-screen bg-gradient-to-r from-purple-300 to-red-300" />
 
                         {items.map(item => (
                             <div
@@ -79,8 +79,9 @@ const PortfolioPage = () => {
                                     <Link
                                         href={item.link}
                                         className="flex justify-end"
+                                        target="blank"
                                     >
-                                        <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                                        <button className="p-2 m-4 text-sm font-semibold text-gray-600 bg-white rounded md:p-4 md:text-md lg:p-8 lg:text-lg">
                                             See Demo
                                         </button>
                                     </Link>
@@ -90,7 +91,7 @@ const PortfolioPage = () => {
                     </motion.div>
                 </div>
             </div>
-            <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+            <div className="flex flex-col items-center justify-center w-screen h-screen gap-16 text-center">
                 <h1 className="text-8xl">Do you have a project?</h1>
                 <div className="relative">
                     <motion.svg
@@ -120,7 +121,7 @@ const PortfolioPage = () => {
                     </motion.svg>
                     <Link
                         href="/contact"
-                        className="w-16 h-16 md:h-28  md:w-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+                        className="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center w-16 h-16 m-auto text-white bg-black rounded-full md:h-28 md:w-28"
                     >
                         Hire me
                     </Link>
