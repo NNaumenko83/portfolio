@@ -32,20 +32,20 @@ const AboutPage = () => {
                         <h1 className="text-2xl font-bold">BIOGRAPHY</h1>
                         {/*BIOGRAPHY DESCRIPTION */}
                         <p className="text-lg">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Corrupti impedit odit dolorum voluptas
-                            officiis quo laborum sapiente est nobis iste
-                            voluptatem itaque doloribus, reiciendis vero
-                            blanditiis quibusdam eius. Voluptatibus aspernatur
-                            nemo necessitatibus officia asperiores. Deserunt.
+                            Reliable and hardworking Junior Full-Stack developer
+                            committed to getting a job done as efficiently and
+                            quality. I focus on HTML5, CSS3, JS, TypeScript,
+                            React, Node.js, Next.js. Development, practice,
+                            opportunuties to grow and work for the result are
+                            important for me.
                         </p>
                         {/*BIOGRAPHY QUOTE */}
-                        <span className="italic">
+                        {/* <span className="italic">
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit.
-                        </span>
+                        </span> */}
                         {/*SIGNATURE */}
-                        <div className="self-end">
+                        {/* <div className="self-end">
                             <svg
                                 width="291"
                                 height="235"
@@ -60,7 +60,7 @@ const AboutPage = () => {
                                     stroke-linecap="round"
                                 />
                             </svg>
-                        </div>
+                        </div> */}
                         <motion.svg
                             initial={{ opacity: 0.2, y: 0 }}
                             animate={{ opacity: 1, y: '10px' }}

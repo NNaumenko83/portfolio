@@ -40,7 +40,7 @@ const items = [
     },
     {
         id: 5,
-        color: 'from-purple-300 to-red-300',
+        color: 'from-red-300 to-blue-300',
         title: 'Filmoteka',
         desc: 'Application for choosing a movie. Role: Developer | Сreating the Header for the main page and implementing the functionality to load and display movies on the library page.',
         img: '/projects_img/Filmoteka.jpg',
@@ -48,7 +48,7 @@ const items = [
     },
     {
         id: 6,
-        color: 'from-purple-300 to-red-300',
+        color: 'from-blue-300 to-violet-300',
         title: 'IceCream',
         desc: 'Ice Cream company website with responsive layout, burger menu, modal window and attractive design. Role: Developer | Сreating the Header and Hero sections',
         img: '/projects_img/IceCream.jpg',
@@ -56,7 +56,7 @@ const items = [
     },
     {
         id: 7,
-        color: 'from-purple-300 to-red-300',
+        color: 'from-violet-300 to-purple-300',
         title: 'PHARMA POINT',
         desc: 'Test task. Web application where users can order medicine delivery from various shops. The Medicine Delivery app allows users to: order medicines, choose delivery address from map or input field, view order history, view order details, use discounts.',
         img: '/projects_img/PharmaPoint.jpg',
