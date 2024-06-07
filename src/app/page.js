@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Homepage() {
     return (
@@ -36,12 +37,18 @@ export default function Homepage() {
                     </p>
                     {/* BUTTONS */}
                     <div className="flex w-full gap-4">
-                        <button className="p-4 text-white bg-black rounded-lg ring ring-black">
+                        <Link
+                            href="/portfolio"
+                            className="p-4 text-white bg-black rounded-lg ring ring-black"
+                        >
                             View My Work
-                        </button>
-                        <button className="p-4 rounded-lg ring ring-black">
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className="p-4 rounded-lg ring ring-black"
+                        >
                             Contact Me
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
