@@ -202,20 +202,19 @@ const AboutPage = () => {
                                 <div className="w-1/3">
                                     {/* JOB TITLE */}
                                     <div className="p-3 font-semibold bg-white rounded-b-lg rounded-s-lg">
-                                        Senior JavaScript Engineer
+                                        Internship
                                     </div>
                                     {/* JOB DESCRIPTION */}
                                     <div className="p-3 text-sm italic">
-                                        My current employment. Way better than
-                                        the position before
+                                        Fullstack developer (React & Node.js)
                                     </div>
                                     {/* JOB DATE */}
                                     <div className="p-3 text-sm font-semibold text-red-400">
-                                        2024-Present
+                                        10/2023-12/2023
                                     </div>
                                     {/* JOB COMPANY */}
                                     <div className="p-1 text-sm font-semibold bg-white rounded w-fit">
-                                        Apple
+                                        ELIFTECH
                                     </div>
                                 </div>
 
@@ -247,20 +246,21 @@ const AboutPage = () => {
                                 <div className="w-1/3">
                                     {/* JOB TITLE */}
                                     <div className="p-3 font-semibold bg-white rounded-b-lg rounded-s-lg">
-                                        Senior JavaScript Engineer
+                                        Internship
                                     </div>
                                     {/* JOB DESCRIPTION */}
                                     <div className="p-3 text-sm italic">
-                                        My current employment. Way better than
-                                        the position before
+                                        Frontend developer (React, Blockchain)
+                                        Building web3 applications and working
+                                        with blockchain technology.
                                     </div>
                                     {/* JOB DATE */}
                                     <div className="p-3 text-sm font-semibold text-red-400">
-                                        2024-Present
+                                        08/2023-10/2023
                                     </div>
                                     {/* JOB COMPANY */}
                                     <div className="p-1 text-sm font-semibold bg-white rounded w-fit">
-                                        Apple
+                                        DEXOLA
                                     </div>
                                 </div>
                             </div>
@@ -270,20 +270,19 @@ const AboutPage = () => {
                                 <div className="w-1/3">
                                     {/* JOB TITLE */}
                                     <div className="p-3 font-semibold bg-white rounded-b-lg rounded-s-lg">
-                                        Senior JavaScript Engineer
+                                        Student
                                     </div>
                                     {/* JOB DESCRIPTION */}
                                     <div className="p-3 text-sm italic">
-                                        My current employment. Way better than
-                                        the position before
+                                        Courses. Fullstack Developer.
                                     </div>
                                     {/* JOB DATE */}
                                     <div className="p-3 text-sm font-semibold text-red-400">
-                                        2024-Present
+                                        07/2022-06/2023
                                     </div>
                                     {/* JOB COMPANY */}
                                     <div className="p-1 text-sm font-semibold bg-white rounded w-fit">
-                                        Apple
+                                        IT School GoIT
                                     </div>
                                 </div>
 
