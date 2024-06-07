@@ -38,13 +38,45 @@ const items = [
         img: '/projects_img/NovaPoshta.jpg',
         link: 'https://nova-poshta-test-task-sooty.vercel.app/',
     },
+    {
+        id: 5,
+        color: 'from-purple-300 to-red-300',
+        title: 'Filmoteka',
+        desc: 'Application for choosing a movie. Role: Developer | Сreating the Header for the main page and implementing the functionality to load and display movies on the library page.',
+        img: '/projects_img/Filmoteka.jpg',
+        link: 'https://kyrylo2.github.io/filmoteka/',
+    },
+    {
+        id: 6,
+        color: 'from-purple-300 to-red-300',
+        title: 'IceCream',
+        desc: 'Ice Cream company website with responsive layout, burger menu, modal window and attractive design. Role: Developer | Сreating the Header and Hero sections',
+        img: '/projects_img/IceCream.jpg',
+        link: 'https://nnaumenko83.github.io/Ice-cream-shop-TEAM-1-/',
+    },
+    {
+        id: 7,
+        color: 'from-purple-300 to-red-300',
+        title: 'PHARMA POINT',
+        desc: 'Test task. Web application where users can order medicine delivery from various shops. The Medicine Delivery app allows users to: order medicines, choose delivery address from map or input field, view order history, view order details, use discounts.',
+        img: '/projects_img/PharmaPoint.jpg',
+        link: 'https://pharma-point.vercel.app/',
+    },
+    {
+        id: 8,
+        color: 'from-purple-300 to-red-300',
+        title: 'Quiz',
+        desc: 'Test task. Web application that allows users to choose their preferred language at the beginning of the quiz, answer questions, and enter their email. After completing the quiz, users have the option to download a CSV file with the answers and retake the quiz.',
+        img: '/projects_img/Quiz.jpg',
+        link: 'https://quiz-test-task.vercel.app/',
+    },
 ];
 
 const PortfolioPage = () => {
     const ref = useRef();
 
     const { scrollYProgress } = useScroll({ target: ref });
-    const x = useTransform(scrollYProgress, [0, 1], ['0%', '-80%']);
+    const x = useTransform(scrollYProgress, [0, 1], ['0%', '-89%']);
 
     return (
         <motion.div
@@ -53,7 +85,7 @@ const PortfolioPage = () => {
             animate={{ y: '0%' }}
             transition={{ duration: 1 }}
         >
-            <div className="h-[600vh] relative" ref={ref}>
+            <div className="h-[1100vh] relative" ref={ref}>
                 <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
                     My works
                 </div>
