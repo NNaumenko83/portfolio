@@ -101,7 +101,11 @@ const Navbar = () => {
             </div>
             {/* SOCIAL */}
             <div className="hidden w-1/3 gap-4 md:flex">
-                <Link href="/">
+                <Link
+                    href="https://github.com/NNaumenko83"
+                    target="blank"
+                    rel="nofollow  noopener noreferrer "
+                >
                     <Image
                         src="/github.png"
                         alt="GitHub icon"
@@ -109,15 +113,11 @@ const Navbar = () => {
                         height={24}
                     />
                 </Link>
-                <Link href="/">
-                    <Image
-                        src="/dribbble.png"
-                        alt="Dribbble icon"
-                        width={24}
-                        height={24}
-                    />
-                </Link>
-                <Link href="/">
+                <Link
+                    href="https://www.instagram.com/nick_naumenko/"
+                    target="blank"
+                    rel="nofollow  noopener noreferrer "
+                >
                     <Image
                         src="/instagram.png"
                         alt="Instagram icon"
@@ -125,7 +125,11 @@ const Navbar = () => {
                         height={24}
                     />
                 </Link>
-                <Link href="/">
+                <Link
+                    href="https://www.facebook.com/naumenko.nikolay"
+                    target="blank"
+                    rel="nofollow  noopener noreferrer "
+                >
                     <Image
                         src="/facebook.png"
                         alt="Facebook icon"
@@ -133,15 +137,11 @@ const Navbar = () => {
                         height={24}
                     />
                 </Link>
-                <Link href="/">
-                    <Image
-                        src="/pinterest.png"
-                        alt="Pinterest icon"
-                        width={24}
-                        height={24}
-                    />
-                </Link>
-                <Link href="/">
+                <Link
+                    href="https://www.linkedin.com/in/mykola--naumenko/"
+                    target="blank"
+                    rel="nofollow  noopener noreferrer "
+                >
                     <Image
                         src="/linkedin.png"
                         alt="Linkedin icon"
